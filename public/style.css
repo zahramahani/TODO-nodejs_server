@@ -1,0 +1,452 @@
+body {
+  font-size: 18px;
+  background-color: #94b5bb; }
+  body .container {
+    /*z*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    body .container .nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #94b5bb;
+      position: sticky; }
+      body .container .nav .liNav {
+        float: left;
+        border: 1px solid darkgray;
+        border-radius: 10px 10px 0px 0px; }
+        body .container .nav .liNav .aNav {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none; }
+        body .container .nav .liNav .aNav:hover {
+          background-color: #e0e6e9;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px 10px 0px 0px; }
+        body .container .nav .liNav .active {
+          background-color: #e0e6e9;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px 10px 0px 0px; }
+    body .container .main-box {
+      /*z*/
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 15px;
+      margin: 0px;
+      background-color: #e0e6e9;
+      border: 1px solid #e0e6e9;
+      border-radius: 5px;
+      height: 100%; }
+      body .container .main-box .search {
+        margin: 10px;
+        margin-bottom: 30px;
+        border: 1px solid #e0e6e9;
+        border-radius: 5px;
+        height: 40px;
+        width: 100%;
+        background-color: white;
+        padding: 7px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        justify-content: center; }
+        body .container .main-box .search .btnSearch {
+          box-sizing: border-box;
+          background: #178294;
+          border: 1px solid #e0e6e9;
+          border-radius: 5px;
+          display: table-cell;
+          -webkit-appearance: button;
+          appearance: button;
+          outline: none;
+          height: 100%;
+          width: 120px;
+          float: right;
+          justify-content: center;
+          padding-left: 40px; }
+      body .container .main-box .todo-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        @media screen and (max-width: 700px) {
+          body .container .main-box .todo-box {
+            justify-content: center; } }
+        body .container .main-box .todo-box .add {
+          margin: 10px;
+          width: 270px;
+          height: 400px;
+          box-sizing: border-box;
+          background-color: #BE7841;
+          border: 1px solid #e0e6e9;
+          color: white;
+          border-radius: 10px;
+          font-size: 25px;
+          cursor: pointer; }
+        body .container .main-box .todo-box .todo {
+          margin: 10px;
+          padding: 10px;
+          background-color: white;
+          width: 270px;
+          height: 400px;
+          box-sizing: border-box;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px; }
+          body .container .main-box .todo-box .todo .head {
+            vertical-align: middle;
+            box-sizing: border-box;
+            padding-top: 10px;
+            border: 1px solid #e0e6e9;
+            border-radius: 10px;
+            color: white;
+            background-color: #178294;
+            height: 40px;
+            margin: 0px;
+            margin-bottom: 15px;
+            text-align: center; }
+          body .container .main-box .todo-box .todo .all-tasks {
+            overflow: auto;
+            max-height: 250px;
+            overflow-y: auto; }
+            body .container .main-box .todo-box .todo .all-tasks::-webkit-scrollbar-track {
+              border-radius: 10px;
+              background-color: #94b5bb; }
+            body .container .main-box .todo-box .todo .all-tasks::-webkit-scrollbar {
+              width: 7px;
+              background-color: #F5F5F5;
+              border-radius: 5px; }
+            body .container .main-box .todo-box .todo .all-tasks::-webkit-scrollbar-thumb {
+              background-color: darkgray;
+              border-radius: 5px; }
+            body .container .main-box .todo-box .todo .all-tasks .task {
+              padding: 5px;
+              display: flex;
+              justify-content: space-between;
+              flex-grow: 1;
+              border-radius: 5px;
+              margin-bottom: 5px;
+              height: 40px;
+              box-sizing: border-box; }
+              body .container .main-box .todo-box .todo .all-tasks .task span {
+                width: 120px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+              body .container .main-box .todo-box .todo .all-tasks .task img {
+                height: 40px;
+                width: 40px;
+                border-radius: 20px; }
+              body .container .main-box .todo-box .todo .all-tasks .task input {
+                height: 20px;
+                width: 20px;
+                border-radius: 20px; }
+              body .container .main-box .todo-box .todo .all-tasks .task input:checked + span {
+                color: darkgray; }
+          body .container .main-box .todo-box .todo .addDo {
+            border: none;
+            color: white;
+            height: 50px;
+            box-sizing: border-box;
+            margin-left: 5px; }
+          body .container .main-box .todo-box .todo .btnAdd {
+            cursor: pointer;
+            background: #BE7841;
+            border: 1px solid #e0e6e9;
+            border-radius: 20px;
+            float: right;
+            color: white;
+            box-sizing: border-box;
+            height: 40px;
+            width: 40px;
+            margin: 5px; }
+
+body {
+  font-size: 18px;
+  background-color: #94b5bb; }
+  body .container {
+    /*z*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    body .container .nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #94b5bb;
+      position: sticky; }
+      body .container .nav .liNav {
+        float: left;
+        border: 1px solid darkgray;
+        border-radius: 10px 10px 0px 0px; }
+        body .container .nav .liNav .aNav {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none; }
+        body .container .nav .liNav .aNav:hover {
+          background-color: #e0e6e9;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px 10px 0px 0px; }
+        body .container .nav .liNav .active {
+          background-color: #e0e6e9;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px 10px 0px 0px; }
+    body .container .main-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 15px;
+      margin: 0px;
+      background-color: #e0e6e9;
+      border: 1px solid black;
+      border-radius: 5px;
+      justify-content: space-between;
+      height: 100%; }
+      body .container .main-box .BoardContent {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 63%; }
+        body .container .main-box .BoardContent .Board {
+          background-color: white;
+          width: 48%;
+          height: 550px;
+          box-sizing: border-box;
+          border-radius: 8px;
+          margin-right: 15px;
+          margin-bottom: 15px;
+          border-style: ridge;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          body .container .main-box .BoardContent .Board .BoardNumber {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            padding-top: 20px;
+            align-content: center;
+            text-align: center;
+            margin: 0px; }
+          body .container .main-box .BoardContent .Board .description {
+            margin: auto 0 0 0;
+            margin-left: 60px;
+            margin-top: 10px; }
+          body .container .main-box .BoardContent .Board .Done {
+            font-size: 40px;
+            padding-top: 20px;
+            display: flex;
+            margin: 0px;
+            justify-content: center;
+            color: #178294;
+            max-height: 40px; }
+          body .container .main-box .BoardContent .Board .all_image {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 5px; }
+            body .container .main-box .BoardContent .Board .all_image .board_image {
+              width: 70px;
+              height: 70px;
+              margin-left: -40px;
+              border-radius: 100px;
+              border-style: ridge; }
+      body .container .main-box .InternalBoard {
+        background-color: #178294;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 37%;
+        height: 290px;
+        text-align: left;
+        box-sizing: border-box;
+        border: 1px solid #178294; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 20px;
+  background-color: #94b5bb; }
+  body .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    body .container .nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #94b5bb;
+      position: sticky; }
+      body .container .nav .liNav {
+        float: left;
+        border: 1px solid #94b5bb;
+        border-radius: 10px 10px 0px 0px; }
+        body .container .nav .liNav .aNav {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none; }
+        body .container .nav .liNav .aNav:hover {
+          background-color: #e0e6e9;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px 10px 0px 0px; }
+        body .container .nav .liNav .active {
+          background-color: #e0e6e9;
+          border: 1px solid #e0e6e9;
+          border-radius: 10px 10px 0px 0px; }
+    body .container .main-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 15px;
+      margin: 0px;
+      background-color: #e0e6e9;
+      border: 1px solid #e0e6e9;
+      border-radius: 5px;
+      height: 100%; }
+      body .container .main-box .div_partitioning {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      body .container .main-box .mainBoard {
+        background-color: white;
+        font-size: 20px;
+        width: 100%;
+        height: 315px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        margin: 0px; }
+        body .container .main-box .mainBoard .div_mainBoardContent {
+          height: 100%;
+          width: 75%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          body .container .main-box .mainBoard .div_mainBoardContent .div_BoardNumber {
+            width: 25%;
+            font-size: 50px;
+            margin-left: 0px;
+            justify-content: start; }
+          body .container .main-box .mainBoard .div_mainBoardContent .div_owner {
+            width: 25%; }
+        body .container .main-box .mainBoard .InternalBoard {
+          background-color: #178294;
+          width: 500px;
+          height: 100%;
+          border-radius: 8px;
+          text-align: left;
+          float: right;
+          box-sizing: border-box;
+          display: flex; }
+          body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            display: flex; }
+            body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_imgMember {
+              width: 100%;
+              height: 25%;
+              padding: 15px;
+              display: flex;
+              flex-direction: row;
+              box-sizing: border-box; }
+            body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_memberPosition {
+              width: 50px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 100%;
+              height: 10%;
+              font-size: 20px;
+              margin-left: 20px;
+              display: flex;
+              box-sizing: border-box; }
+            body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_name_scroll {
+              overflow-y: auto;
+              width: 10px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-height: 500px;
+              width: 100%;
+              height: 40%;
+              overflow: auto;
+              font-size: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 20px;
+              max-width: 95%;
+              max-height: 100%;
+              box-sizing: border-box; }
+              body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_name_scroll::-webkit-scrollbar-track {
+                border-radius: 10px;
+                background-color: #94b5bb; }
+              body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_name_scroll::-webkit-scrollbar {
+                width: 7px;
+                background-color: #F5F5F5;
+                border-radius: 5px; }
+              body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_name_scroll::-webkit-scrollbar-thumb {
+                background-color: darkgray;
+                border-radius: 5px; }
+            body .container .main-box .mainBoard .InternalBoard .div_internalBoardContent .div_MemberButton {
+              width: 100%;
+              height: 20%;
+              display: flex;
+              flex-direction: row-reverse;
+              font-size: 20px;
+              box-sizing: border-box; }
+          body .container .main-box .mainBoard .InternalBoard .MemberButton {
+            background-color: #BE7841;
+            color: white;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 30px;
+            margin-right: 15px;
+            justify-content: center;
+            line-height: 50px;
+            border: none;
+            cursor: pointer; }
+      body .container .main-box img {
+        width: 50px;
+        height: 50px; }
+      body .container .main-box .button {
+        cursor: pointer;
+        background-color: #BE7841;
+        border: none;
+        color: white;
+        font-size: 30px;
+        width: 100%;
+        height: 40px;
+        border-radius: 12px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
