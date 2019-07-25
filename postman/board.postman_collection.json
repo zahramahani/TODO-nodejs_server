@@ -31,7 +31,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3002/api/board/1",
+					"raw": "localhost:3002/api/board/6f927e76-94bf-4f21-bc49-2c4076eb75cb",
 					"host": [
 						"localhost"
 					],
@@ -39,7 +39,7 @@
 					"path": [
 						"api",
 						"board",
-						"1"
+						"6f927e76-94bf-4f21-bc49-2c4076eb75cb"
 					]
 				}
 			},
@@ -79,9 +79,20 @@
 			"name": "updateBoard",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"board_name\":\"boardOne\",\n    \"complete\":true,\n    \"owner\":\"sara\",\n    \"members\": [\"sara\",\"zahra\",\"sadegh\"],\n    \"images\":[\"sara.png\",\"zahra.png\",\"sadegh.png\"],\n    \"todos\": [{},{},{}]\n}"
+				},
 				"url": {
-					"raw": "localhost:3002/api/board/1",
+					"raw": "localhost:3002/api/board/6f927e76-94bf-4f21-bc49-2c4076eb75cb",
 					"host": [
 						"localhost"
 					],
@@ -89,7 +100,7 @@
 					"path": [
 						"api",
 						"board",
-						"1"
+						"6f927e76-94bf-4f21-bc49-2c4076eb75cb"
 					]
 				}
 			},

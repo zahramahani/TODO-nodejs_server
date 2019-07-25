@@ -1,4 +1,4 @@
-[
+define({ "api": [
   {
     "type": "post",
     "url": "/api/board",
@@ -80,7 +80,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/boards_controller.js",
+    "filename": "lib/controller/boards_controller.js",
     "groupTitle": "board"
   },
   {
@@ -173,7 +173,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/boards_controller.js",
+    "filename": "lib/controller/boards_controller.js",
     "groupTitle": "board"
   },
   {
@@ -231,7 +231,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/boards_controller.js",
+    "filename": "lib/controller/boards_controller.js",
     "groupTitle": "board"
   },
   {
@@ -289,7 +289,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/boards_controller.js",
+    "filename": "lib/controller/boards_controller.js",
     "groupTitle": "board"
   },
   {
@@ -389,7 +389,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/boards_controller.js",
+    "filename": "lib/controller/boards_controller.js",
     "groupTitle": "board"
   },
   {
@@ -459,7 +459,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/task-controller.js",
+    "filename": "lib/controller/task-controller.js",
     "groupTitle": "task"
   },
   {
@@ -538,7 +538,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/task-controller.js",
+    "filename": "lib/controller/task-controller.js",
     "groupTitle": "task"
   },
   {
@@ -608,7 +608,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/task-controller.js",
+    "filename": "lib/controller/task-controller.js",
     "groupTitle": "task"
   },
   {
@@ -666,7 +666,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/task-controller.js",
+    "filename": "lib/controller/task-controller.js",
     "groupTitle": "task"
   },
   {
@@ -752,7 +752,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/task-controller.js",
+    "filename": "lib/controller/task-controller.js",
     "groupTitle": "task"
   },
   {
@@ -815,7 +815,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/todo-controller.js",
+    "filename": "lib/controller/todo-controller.js",
     "groupTitle": "todo"
   },
   {
@@ -887,7 +887,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/todo-controller.js",
+    "filename": "lib/controller/todo-controller.js",
     "groupTitle": "todo"
   },
   {
@@ -950,7 +950,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/todo-controller.js",
+    "filename": "lib/controller/todo-controller.js",
     "groupTitle": "todo"
   },
   {
@@ -1008,7 +1008,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/todo-controller.js",
+    "filename": "lib/controller/todo-controller.js",
     "groupTitle": "todo"
   },
   {
@@ -1087,7 +1087,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "controller/todo-controller.js",
+    "filename": "lib/controller/todo-controller.js",
     "groupTitle": "todo"
   }
-]
+] });
