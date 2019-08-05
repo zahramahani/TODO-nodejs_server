@@ -95,10 +95,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"boardId\":\"1\",\r\n    \"title\":\"first todo\",\r\n    \"tasks\":[{},{},{}]\r\n}"
+					"raw": "{\r\n\t\"boardId\":3,\r\n\t\"compelete\":true,\r\n    \"title\":\"first todoccc\"\r\n}"
 				},
 				"url": {
-					"raw": "localhost:3001/api/todo/8c933f4a-1fc9-423b-86cd-2b15a76588a7",
+					"raw": "localhost:3001/api/todo/1",
 					"host": [
 						"localhost"
 					],
@@ -106,7 +106,7 @@
 					"path": [
 						"api",
 						"todo",
-						"8c933f4a-1fc9-423b-86cd-2b15a76588a7"
+						"1"
 					]
 				}
 			},

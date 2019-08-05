@@ -59,14 +59,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"board_name\":\"boardOne\",\n    \"complete\":true,\n    \"owner\":\"sara\",\n    \"members\": [\"sara\",\"zahra\",\"sadegh\"],\n    \"images\":[\"sara.png\",\"zahra.png\",\"sadegh.png\"],\n    \"todos\": [{},{},{}]\n}"
+					"raw": "{\n\t\"board_name\":\"boardOne\",\n    \"complete\":true,\n    \"owner\":\"sara\"\n}"
 				},
 				"url": {
-					"raw": "localhost:3002/api/board",
+					"raw": "localhost:3001/api/board",
 					"host": [
 						"localhost"
 					],
-					"port": "3002",
+					"port": "3001",
 					"path": [
 						"api",
 						"board"
