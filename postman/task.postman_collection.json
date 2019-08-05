@@ -65,14 +65,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"todoId\":\"1\",\n    \"check\":true,\n    \"description\":\"task one\",\n    \"image_url\":\"pic.png\" \n}"
+					"raw": "{\n\t\"todoId\":2,\n\t\"userId\":1,\n    \"check\":true,\n    \"description\":\"task one\"\n}"
 				},
 				"url": {
-					"raw": "localhost:3002/api/task",
+					"raw": "localhost:3001/api/task",
 					"host": [
 						"localhost"
 					],
-					"port": "3002",
+					"port": "3001",
 					"path": [
 						"api",
 						"task"
@@ -95,18 +95,18 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"todoId\":\"1\",\n    \"check\":true,\n    \"description\":\"task one\",\n    \"image_url\":\"pic.png\" \n}"
+					"raw": "{\n\t\"todoId\":2,\n\t\"userId\":1,\n    \"check\":true,\n    \"description\":\" ddddddone\"\n}"
 				},
 				"url": {
-					"raw": "localhost:3002/api/task/948ddb2c-5131-4564-a721-455bd65eb147",
+					"raw": "localhost:3001/api/task/1",
 					"host": [
 						"localhost"
 					],
-					"port": "3002",
+					"port": "3001",
 					"path": [
 						"api",
 						"task",
-						"948ddb2c-5131-4564-a721-455bd65eb147"
+						"1"
 					]
 				}
 			},
