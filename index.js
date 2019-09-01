@@ -7,6 +7,6 @@ server.on('request', function (request, response) {
   router.lookup(request, response)
 })
 
-server.listen(3001, function () {
-  console.log(`server is running on port 3001`)
+server.listen(3004, function () {
+  console.log(`server is running on port 3004`)
 })
