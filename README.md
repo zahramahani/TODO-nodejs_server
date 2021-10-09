@@ -5,3 +5,4 @@ apidoc used for documentation\
 chai used for test \
 eslint used to correct problems\
 postman apis are available\
+crypto,passwordSheriff,jwt used for authentication
