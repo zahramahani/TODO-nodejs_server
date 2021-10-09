@@ -38,10 +38,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://igit.partdp.ir/softwre-development-internship/summer-98/partiya/todo-server.git"
-  },
   "author": "",
   "license": "ISC"
 }
